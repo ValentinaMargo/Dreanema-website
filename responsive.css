@@ -1,0 +1,69 @@
+/* перевертыш для главного экрана */
+@media only screen and (orientation: portrait) {
+    .mustrotate {display: block;}
+    .mainscreen1 {display: none;}
+  }
+  @media only screen and (orientation: landscape) {.mustrotate {display: none;}}
+  
+  
+  /* средний экран */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .moving{transform: scale(1.2);}
+    .stars, .blurstars, .sprinkles {height: 100vh;}
+    #naming {top: 2.75vw;}
+    .alloptions {transform: translateY(-1vw) scale(1.05);}
+    /* средний экран НАСТРОИТЬ КНОПОЧКИ*/
+    .restartstar {
+      width: 4vw;
+      height: 4vw;
+      left: 95.45vw;
+      top: 0vw;
+    }
+    .menustar {
+      width: 4vw;
+      height: 4vw;
+      left: 0vw;
+      top: 0vw;
+    }
+    .up {
+      width: 3.15vw;
+      height: 15vw;
+      left: 95.8vw;
+      transform: translateY(-7vw);
+    }
+  }
+  
+  
+  /* мини-экран */
+  @media (min-width: 415px) and (max-width: 767px) {
+    .moving {transform: scale(1.1);}
+    .stars, .blurstars, .sprinkles {height: 100vh;}
+    #naming {top: 2.75vw;}
+    #option {font-size: 2.5vw;
+      transform: translateY(0.7vw);}
+    .options {
+      height: 50vw;
+      width: 50vw;
+      left: 25vw;
+      top: 4vw;
+    }
+    .alloptions {transform: translateY(-1vw) scale(1.05);}
+    .restartstar {
+      width: 4vw;
+      height: 4vw;
+      left: 95.45vw;
+      top: 0vw;
+    }
+    .menustar {
+      width: 4vw;
+      height: 4vw;
+      left: 0vw;
+      top: 0vw;
+    }
+    .up {
+      width: 3.15vw;
+      height: 15vw;
+      left: 95.8vw;
+      transform: translateY(-7vw);
+    }
+  }
